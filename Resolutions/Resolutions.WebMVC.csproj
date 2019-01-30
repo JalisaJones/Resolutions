@@ -180,7 +180,6 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -257,6 +256,20 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Resolution.Data\Resolution.Data.csproj">
+      <Project>{5e0305ae-65b3-4084-bd68-cf7b7fc36b1b}</Project>
+      <Name>Resolution.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Resolution.Models\Resolution.Models.csproj">
+      <Project>{4907a9e9-2458-4d07-9343-499e8ad845d5}</Project>
+      <Name>Resolution.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Resolution.Services\Resolution.Services.csproj">
+      <Project>{1adda1d4-f097-4414-929b-c3c5cfd182c4}</Project>
+      <Name>Resolution.Services</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
